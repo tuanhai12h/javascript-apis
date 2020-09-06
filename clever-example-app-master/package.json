@@ -1,0 +1,34 @@
+{
+  "name": "clever-example-app",
+  "version": "0.1.0",
+  "description": "A barebones app that implements Sign Up with Clever, using NodeJS and Express 4",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "env $(cat .env | xargs) node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-session": "^1.15.6",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
